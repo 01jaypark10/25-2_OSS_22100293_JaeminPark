@@ -5,6 +5,8 @@
 ### 코드 설명
 
 #### index.html
+상단 타이틀 변경 완료 (Welcome to 박재민's Homepage (22100293))
+Stylesheet1, Style2sheet2, No Stylesheet 하이퍼링크 클릭 시 과제로 제출한 각각의 사이트로 이동
 
 #### style1.html
 Stylesheet1 구현 
