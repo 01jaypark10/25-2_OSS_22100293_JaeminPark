@@ -1,0 +1,132 @@
+<!--Stylesheet2 구현 코드-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Page Different Stylesheets</title>
+</head>
+<style>
+    header {
+        color: white;
+        margin-left: 20px;
+        margin-top: 0px;;
+    }
+
+    body {
+        background-color: rgb(209, 72, 54);
+        font: 100% Lucida Sans, Verdana;
+    }
+
+    .content {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hyperlink {
+        color: rgb(209, 72, 54);
+        text-decoration: none;
+        font-size : 13px;
+    }
+
+    .hyperlink:hover {
+        text-decoration-line:underline;
+    }
+
+    .div_navright {
+        padding: 1px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        margin: 10px;
+        width : 160px;
+        text-align: center;
+        padding : 6px 0px;
+    }
+
+    .div_navright.normal {
+        background: rgb(209, 72, 54);
+        border: none;
+        color: white;
+    }
+
+    .div_navright.active {
+        background: white;
+        color: rgb(209, 72, 54);
+        border: 1px solid rgb(209, 72, 54);
+        font-weight: bold;
+    }
+
+    .side-bar {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 20px;
+        color: rgb(209, 72, 54)
+    }
+
+    footer {
+        background: rgb(209, 72, 54);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 11px;
+        line-height: 20px;
+
+    }
+</style>
+</head>
+
+<body>
+    <!--header 부분-->
+    <header>
+        <div style = "font-size : 50px; font-weight:bold; margin-bottom:30px">Welcome to My Homepaege</div>
+        <div style = "font-size : 30px; padding-bottom : 40px;">Use the menu to select different Stylesheets</div>
+    </header>
+
+    <!--메인 컨텐츠 부분-->
+    <div class="content">
+        <!--글자부분-->
+        <div style="background-color:white; margin-top :10px; margin-left : 10px;margin-right:20px;">
+            <h2 style="color : rgb(209,72,54); font-weight:bold">Same Page Different Stylesheets</h2>
+            <p>
+                <span style = "font-size : 13px">This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                You can change the layout of this page by selecting different stylesheets in the menu, or by selecting
+                one of the following links:</span> <br>
+                <a class="hyperlink" href="style1.html">Stylesheet1</a>,
+                <a class="hyperlink" href="index.htm">Stylesheet2</a>,
+                <a class="hyperlink" href="index.htm">Stylesheet3</a>,
+                <a class="hyperlink" href="index.htm">Stylesheet4</a>.
+            </p>
+
+            <h3 style="color:rgb(209,72,54); font-weight:bold">No Styles</h3>
+            <p style = "font-size : 13px">
+                This page uses DIV elements to group different sections of the HTML page.
+                Click here to see how the page looks like with no stylesheet: <br>
+                <a class="hyperlink" href="index.htm">No Stylesheet</a>.
+            </p>
+        </div>
+
+        <!--우측 버튼부분-->
+        <div style="float: right;">
+            <div class="div_navright normal">Stylesheet1</div>
+            <div class="div_navright active">Stylesheet2</div>
+            <div class="div_navright normal">Stylesheet3</div>
+            <div class="div_navright normal">Stylesheet4</div>
+            <div class="div_navright normal">No Stylesheet</div>
+        </div>
+    </div>
+
+    <div style="background-color:  rgb(246,218,215); margin:0;">
+        <h3 class="side-bar" style="padding-top:25px;padding-bottom:10px;">Side-Bar</h3>
+        <p class="side-bar" style="padding-top:10px;padding-bottom:30px; font-size:15px">Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+    </div>
+    <footer>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </footer>
+</body>
+
+</html>
