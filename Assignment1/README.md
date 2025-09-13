@@ -6,15 +6,15 @@
 
 #### index.html
 상단 타이틀 변경 완료 (Welcome to 박재민's Homepage (22100293)) <br>
-Stylesheet1, Style2sheet2, No Stylesheet 하이퍼링크 클릭 시 과제로 제출한 각각의 사이트로 이동
+Stylesheet1, Stylesheet2, No Stylesheet 하이퍼링크 클릭 시 과제로 제출한 각각의 사이트로 이동
 
 #### style1.html
 Stylesheet1 구현 <br>
-Stylesheet1, Style2sheet2, No Stylesheet 하이퍼링크 클릭 시 과제로 제출한 각각의 사이트로 이동
+Stylesheet1, Stylesheet2, No Stylesheet 하이퍼링크 클릭 시 과제로 제출한 각각의 사이트로 이동
 
 #### style2.html
 Stylesheet2 구현 <br>
-Stylesheet1, Style2sheet2, No Stylesheet 하이퍼링크 클릭 시 과제로 제출한 각각의 사이트로 이동
+Stylesheet1, Stylesheet2, No Stylesheet 하이퍼링크 클릭 시 과제로 제출한 각각의 사이트로 이동
 
 #### example.html
 구현한 예시코드 : Sticky footer with fixed navbar <br>
