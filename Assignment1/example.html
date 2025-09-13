@@ -1,0 +1,131 @@
+<!--구현한 예시코드 : Sticky footer with fixed navbar-->
+<!--
+https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Page Different Stylesheets</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(33, 37, 41);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .div_navbar {
+        position: fixed;
+        top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+
+    .div_search {
+        border: 1px solid;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .div_search.white {
+        color: rgb(147, 151, 155);
+        border-color: rgb(68, 74, 81);
+        width: 200px;
+        padding: 10px 15px;
+        margin-left: 5px;
+    }
+
+    .div_search.green {
+        color: rgb(25, 130, 82);
+        width: 50px;
+        text-align: center;
+        padding: 10px 10px;
+        margin-left: 5px;
+        margin-right: 25px;
+    }
+
+    .div_content {
+        color: white;
+        padding-top: 60px;
+        width: 80vw;
+        margin: 20px auto;
+    }
+
+    .hyperlink {
+        color: rgb(91, 135, 201);
+    }
+
+    .hyperlink:hover {
+        color: rgb(101, 145, 211);
+    }
+
+    footer {
+        background-color: rgb(43, 48, 53);
+        color: rgb(160, 164, 168);
+        position: fixed;
+        width: 100vw;
+        bottom: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 180px;
+    }
+</style>
+
+
+<body>
+    <!--상단 네비게이션 바-->
+    <div class="div_navbar">
+        <!--왼쪽 메뉴바-->
+        <div style="display:flex; justify-content: space-between;">
+            <div style="color : white; margin-right:15px">Fixed navbar </div>
+            <div style="color : white; margin-right:10px">Home </div>
+            <div style="color : rgb(127,130,131); margin-right:10px">Link </div>
+            <div style="color : rgb(83,86,89); margin-right:10px">Disable </div>
+        </div>
+
+        <!--오른쪽 검색창-->
+        <div style="display:flex;">
+            <!--Search 창1-->
+            <div class="div_search white">Search</div>
+            <!--Search 창2-->
+            <div class="div_search green">Search</div>
+        </div>
+    </div>
+
+    <!--중앙 메인 컨텐츠-->
+    <div class="div_content">
+        <h1>Sticky footer ith fixed navbar</h1>
+        <span style="font-size: 20px;">
+            Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar
+            has been added with
+            <span style="color : rgb(191,114,153)">padding-top: 60px; </span>
+            on the
+            <span style="color : rgb(191,114,153)">.container.</span>
+        </span>
+
+        <div style="margin-top : 20px">
+            Back to
+            <a class="hyperlink" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer/">the default sticky
+                footer </a>
+            minus the navbar.
+        </div>
+
+    </div>
+
+    <!--하단 입력창-->
+    <footer>
+        Place sticky footer content here.
+    </footer>
+
+</body>
+
+</html>
